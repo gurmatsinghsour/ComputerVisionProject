@@ -1,53 +1,11 @@
 # YOLOv8 Road Sign Detection
 
-A fine-tuned YOLOv8 model for detecting road signs with 94.3% mAP50 accuracy.
-
-## Quick Start
-
-1. **Load the model**:
-```python
-from ultralytics import YOLO
-model = YOLO("models/road_sign_detector_final.pt")
-```
-
-2. **Make predictions**:
-```python
-results = model("your_image.jpg")
-results[0].show()  # Display results
-results[0].save("output.jpg")  # Save annotated image
-```
-
-## Files
-
-- `model_clean.ipynb` - Main notebook for using the trained model
-- `TRAINING_GUIDE.md` - Detailed explanation of the training process  
-- `models/road_sign_detector_final.pt` - Trained model file (94.3% mAP50)
-- `config.yaml` - Dataset configuration file
-- `requirements.txt` - Python dependencies
-- `.gitignore` - Git ignore file
-- `models/` - Contains all model files
-- `results/` - Contains output images and results
-- `archived_training/` - Contains training artifacts and versions
-
 ## Model Performance
-
 - **Overall mAP50**: 94.3%
 - **Classes detected**: speedlimit, stop, trafficlight, crosswalk
 - **Model size**: ~6.2 MB
 - **Training time**: ~8 minutes
-
-### Per-class Performance
-- Speed limit signs: 99.0% mAP50
-- Stop signs: 99.5% mAP50  
-- Traffic lights: 81.4% mAP50
-- Crosswalk signs: 97.4% mAP50
-
-## Requirements
-
-```bash
-pip install ultralytics
-```
-
+- 
 ## Dataset
 
 - **Source**: Kaggle road sign detection dataset
